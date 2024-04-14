@@ -1,31 +1,29 @@
-# Prueba Infinity Tech
+# Prueba Técnica Petromil
 
 
 **API para gestionar el acceso a la aplicación y así poder gestionar
-el listar,crear,editar y eliminar  usuarios**
+el listar,crear,editar y eliminar usuarios**
 
 
-> *Despues de haber descargado de [GitHub](https://github.com/YeroDev/Prueba_Infinity_Petromil.git "Infinity Tech")*  la carpeta que contiene los archivos, podemos abrir esa carpeta en un editor de codigo, ejemplo: Visual Studio Code
+> *Para el despliegue y ejecución de este proyecto lo primero que hacemos es descargar el archivo que contiene el código fuente de proyecto de la api desde el siguiente enlace: [GitHub](https://github.com/YeroDev/Prueba_tecnica_petromil.git "Prueba_tecnica_petromil")* 
 
 ## Instalacion
-1. Instalar [Python](https://www.python.org/downloads/ "Python")
+1. Instalar Python desde su página oficial: [Python](https://www.python.org/downloads/ "Python")
 
 
-2. Estando en nuestro editor de código favorito, podemos crear un entorno virtual para poder descargar las dependencias que van a hacer que nuestro proyecto funcione.
-Estando situado en nuestro proyecto dentro del editor de código, abrimos una terminal y con el comando.
+2. Luego de instalar Python, el paso siguiente es abrir una terminal de comandos, nos ubicamos en la ruta principal del proyecto para crear el entorno virtual de ejecución que nos permita correr el proyecto, para esto efectuamos la siguiente instrucción en la terminal. 
 
->**virtualenv -p python3 env**
+>**python3 -m venv nombre_entorno**
 
-Después hay que activar este entorno. Y lo hacemos con el comando 
+3. Después de crear el entorno virtual, debemos activar dicho entorno ejecutando el siguiente comando. 
 
->**.\env\scripts\activate**
+>**.\nombre_entorno\scripts\activate**
 
-Después de estar activado nuestro entorno virtual, vamos a instalar todas las dependencias de nuestro proyecto 
-esto lo hacemos con el siguiente comando  
+4. El paso siguiente es instalar todas las dependencias de nuestro proyecto, esto lo hacemos con el siguiente comando.  
 
 >**pip install**
 
-aquí te dejo todas las dependencias.
+Dependencias del proyecto.
 
 > * asgiref==3.6.0
 > * attrs==22.2.0
@@ -44,17 +42,20 @@ aquí te dejo todas las dependencias.
 > * tzdata==2022.7
 > * uritemplate==4.1.1
 
-Un ejemplo de esto es: **pip install Django==4.1.5**
-Con esto ya estamos listos para empezar a interactuar con nuestro proyecto
+Ejemplo: **pip install Django==4.1.5**
+
+Si se ha seguido las indicaciones correctamente, ya está todo configurado para correr el proyecto utilizando la instrucción siguiente:
+
+**python manage.py runserver**
 
 
-## Rutas
-* [Login](http://localhost:8000/api/login/ "Login")
-* [Listar](http://localhost:8000/v1/users/ "Listar")
-* [Listar un usuario](http://localhost:8000/v1/users/1/ "Listar un usuario")
-* [Crear](http://localhost:8000/v1/users/ "Crear")
-* [Editar](http://localhost:8000/v1/users/1/ "Editar")
-* [Eliminar](http://localhost:8000/v1/users/1/ "Eliminar")
+## Rutas o EndPoint
+* [Login](http://localhost:8000/api/login/ "Login")   c
+* [Listar](http://localhost:8000/v1/users/ "Listar")  - Metodo Get
+* [Listar un usuario](http://localhost:8000/v1/users/1/ "Listar un usuario")  - Metodo Get
+* [Crear](http://localhost:8000/v1/users/ "Crear")  - Metodo Get
+* [Editar](http://localhost:8000/v1/users/1/ "Editar")  - Metodo Put
+* [Eliminar](http://localhost:8000/v1/users/1/ "Eliminar")  - Metodo Delete
 
 
 
@@ -77,7 +78,6 @@ La respuesta que esto nos devolverá será un JSON con un token, refresh_token, 
 
 
 ## Listar
-
 
 
 Para acceder a esta ruta [Listar](http://localhost:8000/v1/users/ "Listar") necesitamos el método **GET** y en **Autorización** un token de tipo **Bearer token** el cual nos lo provee el login.
@@ -120,20 +120,12 @@ Para acceder a esta ruta [Crear](http://localhost:8000/v1/users/ "Crear") necesi
  ```Json
 
  {
-
-
     "first_name" : "CharField()",
-
     "last_name" : "CharField()",
-
     "date_birth" : "DateField()",
-
     "address" : "CharField()",
-
     "password" : "CharField()",
-
     "mobile_phone" : "IntegerField()"
-
 }
 
  ```
@@ -163,7 +155,7 @@ Para acceder a esta ruta [Editar](http://localhost:8000/v1/users/1/ "Editar") ne
 {
     "first_name": "Yeromis",
     "last_name": "Suarez Algarin",
-    "date_birth": "1987-08-18",
+    "date_birth": "2000-08-18",
     "address": "carrera",
     "password": "123456",
     "mobile_phone": 300000000

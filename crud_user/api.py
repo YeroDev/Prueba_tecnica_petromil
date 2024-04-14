@@ -39,7 +39,6 @@ def user_detail_api_view(request, pk):
 
         # update
         elif request.method == 'PUT':
-            user = User.objects.filter(id = pk).first()
             user_serializer = UserSerializer(user, data = request.data)
             if user_serializer.is_valid():
                 user_serializer.save()
@@ -47,9 +46,8 @@ def user_detail_api_view(request, pk):
             return Response(user_serializer.errors, status = status.HTTP_400_BAD_REQUEST)
         # delete
         elif request.method == 'DELETE':
-            user = User.objects.filter(id = pk).first()
             user_serializer = UserSerializer(user)
             user.delete()
             return Response(user_serializer.data, status = status.HTTP_200_OK)
 
-    return Response({'message': 'No user found with this data...'}, status = status.HTTP_400_BAD_REQUEST)
+    return Response({'message': 'Usuario no encontrado'}, status = status.HTTP_400_BAD_REQUEST)

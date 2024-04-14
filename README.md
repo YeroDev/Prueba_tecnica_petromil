@@ -50,10 +50,10 @@ Si se ha seguido las indicaciones correctamente, ya está todo configurado para 
 
 
 ## Rutas o EndPoint
-* [Login](http://localhost:8000/api/login/ "Login")   c
+* [Login](http://localhost:8000/api/login/ "Login")   Metodo Post
 * [Listar](http://localhost:8000/v1/users/ "Listar")  - Metodo Get
 * [Listar un usuario](http://localhost:8000/v1/users/1/ "Listar un usuario")  - Metodo Get
-* [Crear](http://localhost:8000/v1/users/ "Crear")  - Metodo Get
+* [Crear](http://localhost:8000/v1/users/ "Crear")  - Metodo Post
 * [Editar](http://localhost:8000/v1/users/1/ "Editar")  - Metodo Put
 * [Eliminar](http://localhost:8000/v1/users/1/ "Eliminar")  - Metodo Delete
 

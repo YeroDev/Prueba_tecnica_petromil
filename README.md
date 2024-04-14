@@ -81,13 +81,13 @@ La respuesta que esto nos devolverá será un JSON con un token, refresh_token, 
 
 Para acceder a esta ruta [Listar](http://localhost:8000/v1/users/ "Listar") necesitamos el método **GET** y en **Autorización** un token de tipo **Bearer token** el cual nos lo provee el login.
 
-![Listar](imagenes_apis/Listar_usuarios_creados.PNG)
+![Listar](evidencias/Listar_usuarios_creados.PNG)
 
 
 
 Esto nos dará por respuesta, todos los usuarios que estén registrados en la base de datos.
 
-![Respuesta](imagenes_apis/Respuesta_Listar_usuarios.PNG)
+![Respuesta](evidencias/Respuesta_Listar_usuarios.PNG)
 
 
 
@@ -98,13 +98,13 @@ Esto nos dará por respuesta, todos los usuarios que estén registrados en la ba
 
 Para acceder a esta ruta [Listar un usuario](http://localhost:8000/v1/users/1/ "Listar un usuario") necesitamos el método **GET** en **Authorization** un token de tipo **Bearer token** el cual nos lo provee el login y en la ruta enviarle el **ID** del usuario a listar de la siguiente manera.
 
-![Listar un usuario](imagenes_apis/Listar_un_usuario.PNG)
+![Listar un usuario](evidencias/Listar_un_usuario.PNG)
 
 
 
 Esto nos dará por respuesta, el usuario solicitado.
 
-![Respuesta](imagenes_apis/Respuesta_listar_un_usuario.PNG)
+![Respuesta](evidencias/Respuesta_listar_un_usuario.PNG)
 
 
 
@@ -133,13 +133,13 @@ De la siguiente manera.
 
 
 
-![Crear](imagenes_apis/Crear_usuario.PNG)
+![Crear](evidencias/Crear_usuario.PNG)
 
 
 
 Esto nos dará por respuesta, el usuario creado con todos sus datos y la **password** encriptada.
 
-![Respuesta](imagenes_apis/respuesta_crear_usuario.PNG)
+![Respuesta](evidencias/respuesta_crear_usuario.PNG)
 
 
 
@@ -166,13 +166,13 @@ De la siguiente manera.
 
 
 
-![Editar](imagenes_apis/Actualizar_un_usuario.PNG)
+![Editar](evidencias/Actualizar_un_usuario.PNG)
 
 
 
 Esto nos dará por respuesta, el usuario editado con todos sus datos y la **password** encriptada.
 
-![Respuesta](imagenes_apis/Respuesta_editar_un_usuario.PNG)
+![Respuesta](evidencias/Respuesta_editar_un_usuario.PNG)
 
 
 
@@ -184,10 +184,10 @@ Esto nos dará por respuesta, el usuario editado con todos sus datos y la **pass
 
 Para acceder a esta ruta [Eliminar](http://localhost:8000/v1/users/1/ "Eliminar") necesitamos el metodo **Delete** en **Authorization** un token de tipo **Bearer token** el cual nos lo provee el login y en la ruta enviarle el **ID** del usuario a eliminar de la siguiente manera.
 
-![Eliminar](imagenes_apis/Eliminar.PNG)
+![Eliminar](evidencias/Eliminar.PNG)
 
 
 
 Esto nos dará por respuesta, el usuario eliminado.
 
-![Respuesta](imagenes_apis/Respuesta_eliminar.PNG)
+![Respuesta](evidencias/Respuesta_eliminar.PNG)

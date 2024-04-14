@@ -75,43 +75,6 @@ La respuesta que esto nos devolverá será un JSON con un token, refresh_token, 
  Con el token dado de **login**, tendremos acceso a las rutas de listar, listar un *usuario*, *creación*, *edición* y *eliminación*.
 
 
-
-## Listar
-
-
-Para acceder a esta ruta [Listar](http://localhost:8000/v1/users/ "Listar") necesitamos el método **GET** y en **Autorización** un token de tipo **Bearer token** el cual nos lo provee el login.
-
-![Listar](evidencias/Listar_usuarios_creados.PNG)
-
-
-
-Esto nos dará por respuesta, todos los usuarios que estén registrados en la base de datos.
-
-![Respuesta](evidencias/Respuesta_Listar_usuarios.PNG)
-
-
-
-
-
-## Listar un solo usuario
-
-
-Para acceder a esta ruta [Listar un usuario](http://localhost:8000/v1/users/1/ "Listar un usuario") necesitamos el método **GET** en **Authorization** un token de tipo **Bearer token** el cual nos lo provee el login y en la ruta enviarle el **ID** del usuario a listar de la siguiente manera.
-
-![Listar un usuario](evidencias/Listar_un_usuario.PNG)
-
-
-
-Esto nos dará por respuesta, el usuario solicitado.
-
-![Respuesta](evidencias/Respuesta_listar_un_usuario.PNG)
-
-
-
-
-
-
-
 ## Crear
 
 Para acceder a esta ruta [Crear](http://localhost:8000/v1/users/ "Crear") necesitamos el método **POST**, en **Authorization** un token de tipo **Bearer token** el cual nos lo provee el login, y en el **Body** y en formato **Json** estos datos.
@@ -142,6 +105,36 @@ Esto nos dará por respuesta, el usuario creado con todos sus datos y la **passw
 ![Respuesta](evidencias/respuesta_crear_usuario.PNG)
 
 
+
+## Listar
+
+
+Para acceder a esta ruta [Listar](http://localhost:8000/v1/users/ "Listar") necesitamos el método **GET** y en **Autorización** un token de tipo **Bearer token** el cual nos lo provee el login.
+
+![Listar](evidencias/Listar_usuarios_creados.PNG)
+
+
+
+Esto nos dará por respuesta, todos los usuarios que estén registrados en la base de datos.
+
+![Respuesta](evidencias/Respuesta_Listar_usuarios.PNG)
+
+
+
+
+
+## Listar un solo usuario
+
+
+Para acceder a esta ruta [Listar un usuario](http://localhost:8000/v1/users/1/ "Listar un usuario") necesitamos el método **GET** en **Authorization** un token de tipo **Bearer token** el cual nos lo provee el login y en la ruta enviarle el **ID** del usuario a listar de la siguiente manera.
+
+![Listar un usuario](evidencias/Listar_un_usuario.PNG)
+
+
+
+Esto nos dará por respuesta, el usuario solicitado.
+
+![Respuesta](evidencias/Respuesta_listar_un_usuario.PNG)
 
 
 

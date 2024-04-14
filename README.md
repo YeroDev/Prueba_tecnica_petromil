@@ -125,6 +125,8 @@ Esto nos dará por respuesta, el usuario creado con todos sus datos y la **passw
 
 Para acceder a esta ruta [Listar](http://localhost:8000/v1/users/ "Listar") necesitamos el método **GET** y en **Autorización** un token de tipo **Bearer token** el cual nos lo provee el login.
 
+![Listar](evidencias/Usar_Token.PNG)
+
 ![Listar](evidencias/Listar_usuarios_creados.PNG)
 
 

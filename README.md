@@ -62,14 +62,13 @@ Si se ha seguido las indicaciones correctamente, ya está todo configurado para 
 ## Login
 
 
-> Habiendo corrido nuestro proyecto, lo Primero que hacemos es loguearnos con nuestro *username* y nuestro *password* en la ruta [Login](http://localhost:8000/api/login/ "Login"), mandándoles en el body y en formato JSON el username y el password de la siguiente manera
+> Habiendo corrido nuestro proyecto, lo Primero que hacemos es loguearnos con nuestro *username* y nuestro *password* en la ruta [Login](http://localhost:8000/api/login/ "Login"), mandándoles en el body y en formato JSON el username y el password de la siguiente manera.
 
 ![Login](evidencias/Login.PNG)
 
-La respuesta que esto nos devolverá será un JSON con un token, refresh_token, usuario con sus datos y un mensaje
+La respuesta que esto nos devolverá será un JSON con un token, refresh_token, usuario con sus datos y un mensaje.
 
-
-![Login](imagenes_apis/Respuesta_login.PNG)
+![Login](evidencias/Respuesta_login.PNG)
 
 
 

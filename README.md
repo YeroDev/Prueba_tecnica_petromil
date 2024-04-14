@@ -91,8 +91,22 @@ Para acceder a esta ruta [Crear](http://localhost:8000/v1/users/ "Crear") necesi
 }
 
  ```
+ 
 
 De la siguiente manera.
+
+ ```Json
+
+{
+    "first_name": "Yeromis",
+    "last_name": "Suarez Algarin",
+    "date_birth": "2000-08-18",
+    "address": "carrera",
+    "password": "123456",
+    "mobile_phone": 300000000
+}
+
+ ```
 
 
 
